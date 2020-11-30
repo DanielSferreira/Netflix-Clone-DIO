@@ -1,0 +1,93 @@
+.filmes-carrosel {
+    display: flex;
+    height: 88vh;
+    margin: 2vw;
+    box-sizing: border-box;
+}
+
+.splide-stl {
+    width: 100%;
+}
+
+.item-filme {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-template-areas: "title title""tralier desc";
+    gap: 15px;
+    grid-template-rows: 85px 2fr;
+    grid-template-columns: 4fr 2fr;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.tralier {
+    grid-area: tralier;
+}
+
+.desca {
+    grid-area: desc;
+    margin: 1.5rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* Para smartphones */
+@media screen and (max-width:600px) {
+    .item-filme {
+        grid-template-areas: "title""tralier""desc";
+        grid-template-rows: 80px 250px 250px;
+        grid-template-columns: auto;
+        overflow-y: scroll;
+    }
+
+    .desca {
+        height: 250px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Para smartphones */
+@media screen and (min-width:600px) and (max-width:1000px) {
+
+    .desca {
+        height: 250px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* Para Tablets */
+@media screen and (min-width:700px) and (max-width:1024px) {
+
+    .item-filme {
+        grid-template-rows: 80px 220px;
+        grid-template-columns: auto;
+        overflow-y: scroll;
+    }
+
+    iframe {
+        height: 220px;
+    }
+
+    .desca {
+        height: 220px;
+    }
+}
