@@ -8,4 +8,4 @@ Adicionei na plataforma uma lista de trailers de filmes disponibilidados na netf
 - Embeed de vídeos para mostrar os trailers
 
 ![Doc1](img/doc1.jpg)
-![Doc2](img/doc2.jpg)
+![Doc2](img/doc2.png)
